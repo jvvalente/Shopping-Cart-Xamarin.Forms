@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HW3.Views.SelectionPage">
+    
+    <ContentPage.Content>
+
+        
+
+        <StackLayout HorizontalOptions="Center">
+
+            <Label Text="How many would you like?" HorizontalTextAlignment="Center" FontSize="25"/>
+            <Label x:Name="testName" HorizontalTextAlignment="center" FontSize="30"/>
+            <Label x:Name="testPrice" HorizontalTextAlignment="center" FontSize="25"/>
+            <Label x:Name="testInventory" HorizontalTextAlignment="center" FontSize="20"/>
+            <Label x:Name="testDescription" HorizontalTextAlignment="center" FontSize="20"/>
+            <Label x:Name="sliderNumber" FontSize="25" HorizontalTextAlignment="Center"/>
+            <Slider x:Name="slider"
+                    Value="1"
+                    Minimum="0"
+                    Maximum="100"
+                    ValueChanged="slider_changed"/>
+                       
+            <Button Text="Add"
+                     x:Name="addButton"
+                     Clicked="addButton_clicked"/>
+             <Button Text="Back"
+                     x:Name="backButton"
+                     Clicked="backButton_clicked"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
